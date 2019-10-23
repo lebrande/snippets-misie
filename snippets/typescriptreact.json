@@ -1,0 +1,84 @@
+{
+	"Function Component": {
+		"prefix": "funcom",
+		"body": [
+			"import React, { FunctionComponent } from 'react';",
+			"",
+			"type TProps = {$2};",
+			"",
+			"const $TM_FILENAME_BASE: FunctionComponent<TProps> = ($3) => (",
+			"  <div>$1</div>",
+			");",
+			"",
+			"export default $TM_FILENAME_BASE;"
+		],
+		"description": "Function Component"
+	},
+	"Enhanced Function Component": {
+		"prefix": "enhfuncom",
+		"body": [
+			"import React, { FunctionComponent } from 'react';",
+			"import { compose } from 'recompose';",
+			"",
+			"type TProps = {$2};",
+			"type TInnerProps = {$3};",
+			"",
+			"const $TM_FILENAME_BASE: FunctionComponent<TInnerProps> = ($4) => (",
+			"  <div>$1</div>",
+			");",
+			"",
+			"const enhance = compose<TInnerProps, TProps>(",
+			"  $5",
+			");",
+			"",
+			"export default enhance($TM_FILENAME_BASE);"
+		],
+		"description": "Enhanced Function Component"
+	},
+	"Connected Function Component": {
+		"prefix": "confuncom",
+		"body": [
+			"import React, { FunctionComponent } from 'react';",
+			"import { compose } from 'recompose';",
+			"import { createStructuredSelector } from 'reselect';",
+			"import { connect } from 'react-redux';",
+			"",
+			"type TProps = {$2};",
+			"type TInnerProps = {$3};",
+			"",
+			"const $TM_FILENAME_BASE: FunctionComponent<TInnerProps> = ($4) => (",
+			"  <div>$1</div>",
+			");",
+			"",
+			"const mapStateToProps = createStructuredSelector({",
+			"  $5",
+			"});",
+			"",
+			"const mapDispatchToProps = {",
+			"  $6",
+			"};",
+			"",
+			"const enhance = compose<TInnerProps, TProps>(",
+			"  connect(",
+			"    mapStateToProps,",
+			"    mapDispatchToProps,",
+			"  ),",
+			"  $7",
+			");",
+			"",
+			"export default enhance($TM_FILENAME_BASE);"
+		],
+		"description": "Connected Function Component"
+	},
+	"Use Material Styles": {
+		"prefix": "usemuisty",
+		"body": [
+			"import { makeStyles, createStyles } from '@material-ui/styles';",
+			"",
+			"export const $TM_FILENAME_BASE = makeStyles(() => createStyles({",
+			"  $1",
+			"}));"
+		],
+		"description": "Use Material Styles"
+	}
+}

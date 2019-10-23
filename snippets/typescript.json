@@ -1,0 +1,43 @@
+{
+	"Use Material Styles": {
+		"prefix": "usemuisty",
+		"body": [
+			"import { makeStyles, createStyles } from '@material-ui/styles';",
+			"",
+			"export const $TM_FILENAME_BASE = makeStyles(() => createStyles({",
+			"  $1",
+			"}));"
+		],
+		"description": "Use Material Styles"
+	},
+	"Reducer": {
+		"prefix": "reducer",
+		"body": [
+			"import {",
+			"  ${2:TState},",
+			"  ${3:TActionTypes},",
+			"  ${4:SOME_ACTION},",
+			"} from './types';",
+			"",
+			"const initialState: ${2:TState} = {",
+			"  $5,",
+			"}",
+			"",
+			"export const ${1:someReducer} = (",
+			"  state = initialState,",
+			"  action: ${3:TActionTypes},",
+			"): ${2:TState} => {",
+			"  switch (action.type) {",
+			"    case ${4:SOME_ACTION}: {",
+			"      return {",
+			"        ...state,",
+			"      }",
+			"    }",
+			"    default:",
+			"      return state",
+			"  }",
+			"}"
+		],
+		"description": "Reducer"
+	}
+}
