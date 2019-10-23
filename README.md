@@ -1,12 +1,21 @@
 # 🐻 SNIPPETS-MISIE 🐻
 
-# ❗️ I just wanna use
+## ❗️ I just wanna use
+
 - In VSCode View -> Command Palette `cmd` + `shift` + `P` and type `snippets`. Choose option `Preferences: Configure User Snippets`:
+
 ![VScode edit snippets command](https://github.com/lebrande/snippets-misie/blob/master/assets/vscode-edit-snippets-command.png "VScode edit snippets command")
+
 - Select language:
+
 ![Choose code language from list](https://github.com/lebrande/snippets-misie/blob/master/assets/lang-list.png "Choose code language from list")
+
 - Now a `<lang>.json` has been opened. Paste code from according file in `snippets` folder.
+
+![Edit file view](https://github.com/lebrande/snippets-misie/blob/master/assets/edit-file.png "Edit file view")
+
 - Open a file which you want to use your snippet in and try to use `prefix` from one of them. In example below that's `log`.
+
 ![Use a snippet](https://github.com/lebrande/snippets-misie/blob/master/assets/usage.png "Use a snippet")
 - Done.
 
