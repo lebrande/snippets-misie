@@ -1,5 +1,17 @@
 # 🐻 SNIPPETS-MISIE 🐻
 
+## Snippets list
+
+#### typescriptreact
+- Function Component - `funcom`
+- Enhanced Function Component - `enhfuncom`
+- Connected Function Component - `confuncom`
+- Use Material Styles - `usemuisty`
+
+#### typescript
+- Reducer - `reducer`
+- Use Material Styles - `usemuisty`
+
 ## ❗️ I just wanna use
 
 - In VSCode View -> Command Palette `cmd` + `shift` + `P` and type `snippets`. Choose option `Preferences: Configure User Snippets`:
@@ -40,7 +52,7 @@
 }
 ```
 
-### 📣 Helpful section
+### 📣 Help section
 
 - Cool tool [snippet-generator.app](https://snippet-generator.app/)
 - Tutorial [Traversy Media - Code Faster With Custom VS Code Snippets](https://www.youtube.com/watch?v=JIqk9UxgKEc)

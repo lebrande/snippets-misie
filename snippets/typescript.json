@@ -1,15 +1,4 @@
 {
-	"Use Material Styles": {
-		"prefix": "usemuisty",
-		"body": [
-			"import { makeStyles, createStyles } from '@material-ui/styles';",
-			"",
-			"export const $TM_FILENAME_BASE = makeStyles(() => createStyles({",
-			"  $1",
-			"}));"
-		],
-		"description": "Use Material Styles"
-	},
 	"Reducer": {
 		"prefix": "reducer",
 		"body": [
@@ -39,5 +28,16 @@
 			"}"
 		],
 		"description": "Reducer"
+	},
+	"Use Material Styles": {
+		"prefix": "usemuisty",
+		"body": [
+			"import { makeStyles, createStyles } from '@material-ui/styles';",
+			"",
+			"export const $TM_FILENAME_BASE = makeStyles(() => createStyles({",
+			"  $1",
+			"}));"
+		],
+		"description": "Use Material Styles"
 	}
 }
